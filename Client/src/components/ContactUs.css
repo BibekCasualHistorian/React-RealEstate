@@ -1,0 +1,101 @@
+.contact-us {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contact-us-left > * {
+  margin-block: 0.2em;
+}
+
+.contact-us-card {
+  border-radius: 8px;
+  padding: 1em;
+  border: 1px solid #ededed;
+  margin-block: 0.5em;
+  transition-duration: 0.5s;
+}
+
+.contact-us-card:hover {
+  transform: scale(1.05);
+}
+
+.card-upper-part {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.card-upper-part i {
+  align-self: center;
+}
+
+.card-upper-part > div {
+  height: 50px;
+}
+
+.card-lower-part {
+  cursor: pointer;
+  background: #ededed;
+  color: #4066ff;
+  text-align: center;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.contact-us-right {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid rgb(12, 4, 4); */
+}
+
+.contact-us-right img {
+  object-fit: cover;
+  width: min(90%, 350px);
+  height: 450px;
+  border-radius: 50% 50% 0 0;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-us {
+    flex-direction: row;
+  }
+
+  .contact-us-left {
+    padding: 1em;
+    padding-top: 2em;
+    /* border: 1px solid black; */
+  }
+
+  .contact-us-left p {
+    margin-bottom: 2em;
+  }
+
+  .contact-us-card {
+    width: 46%;
+    display: inline-block;
+    margin: 0.4em;
+    margin-block: 1em;
+    padding: 0.8em;
+  }
+
+  .card-upper-part {
+    gap: 0.5em;
+  }
+
+  .card-upper-part h2 {
+    text-wrap: nowrap;
+  }
+
+  .contact-us-right img {
+    width: min(100%, 450px);
+    height: 550px;
+  }
+
+  .contact-us-left {
+  }
+}

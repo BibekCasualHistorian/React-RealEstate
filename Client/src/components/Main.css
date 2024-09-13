@@ -1,0 +1,196 @@
+main {
+  position: relative;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2.5em 2em 4em 2em;
+  gap: 4em;
+}
+
+.main-heading {
+  max-width: 100%;
+  font-size: 1.4rem;
+  line-height: 0.9;
+  margin-bottom: 1.7em;
+}
+
+main > div p {
+  max-width: 100%;
+  margin-bottom: 2em;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+main form {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 3px solid #cdcdcd;
+  background: white;
+  padding: 0.6em 1em;
+  display: flex;
+  align-items: center;
+}
+
+main form i {
+  flex-grow: 2;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  background: none;
+}
+
+main form input {
+  max-width: 100%;
+
+  margin-inline: 0.4em;
+  border: none;
+  min-width: 63%;
+  font-size: 1.05rem;
+}
+
+main form input:focus {
+  outline: none;
+}
+
+main form button {
+  flex-grow: 2;
+  cursor: pointer;
+  padding: 0.7em 1.1em;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #4066ff, blue);
+  /* border: none; */
+  border-radius: 5px;
+  color: white;
+}
+
+.main-countup {
+  max-width: 100%;
+
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-wrap: nowrap;
+}
+
+.main-countup h1 {
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+
+.main-countup span {
+  margin-left: 0.1em;
+}
+
+.main-countup > div {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+main div:nth-of-type(2) {
+  text-align: center;
+}
+
+main div:nth-of-type(2) img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  border: 10px solid #312f2e;
+  max-width: 800px;
+}
+
+/* Main Heading Ball  */
+.main-heading-ball {
+  width: 45px;
+  /* background: orange; */
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  z-index: 0;
+  left: 44%;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    /* background: red; */
+    padding: 2.5em 20vw 4em 20vw;
+
+    padding-inline: 19vw;
+  }
+
+  main div:nth-of-type(2) img {
+    object-fit: cover;
+    width: 80%;
+    border-radius: 50% 50% 0 0;
+    border: 10px solid #312f2e;
+    max-width: 800px;
+  }
+
+  .main-heading-ball {
+    width: 45px;
+    /* background: orange; */
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+    left: 39%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  main {
+    padding: 2.5em 20vw 4em 20vw;
+
+    flex-direction: row;
+    gap: min(20px, 2vw);
+    padding-inline: 6vw;
+  }
+
+  main > div {
+    width: 50%;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    line-height: 0.7;
+    margin-bottom: 1.5em;
+  }
+
+  main > div p {
+    margin-top: 2em;
+  }
+
+  main > div:nth-of-type(2) {
+  }
+
+  main div:nth-of-type(2) img {
+    width: 420px;
+  }
+
+  .main-heading-ball {
+    width: 55px;
+    /* background: orange; */
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    z-index: 0;
+    left: 320px;
+  }
+}
+
+.filter {
+  position: absolute;
+  inset: 10px 0 0 60px;
+  background: white;
+  width: 200px;
+  height: 200px;
+  filter: blur(120px);
+}
+
+@media screen and (min-width: 700px) {
+}

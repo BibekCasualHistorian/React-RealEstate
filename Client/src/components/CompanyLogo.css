@@ -1,0 +1,33 @@
+.company-logos {
+    margin-block: 4em;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 3em;
+}
+
+.company-logos > div {
+    display: flex;
+    justify-content: center;
+}
+
+.company-logos img {
+    width: 70%;
+}
+
+.company-logos > div:nth-of-type(1) img {
+    width: 50%;
+}
+
+@media  screen and (min-width: 500px) and (max-width: 900px) {
+    .company-logos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media  screen and (min-width: 900px){
+    .company-logos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

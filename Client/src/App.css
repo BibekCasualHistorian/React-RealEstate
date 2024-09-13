@@ -1,0 +1,167 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+i {
+  color: #4066ff;
+  background: #eeeeff;
+  padding: 1em;
+  border: 8px;
+}
+
+/* Utility class  */
+.gold {
+  color: #ffa500;
+}
+
+/* Header  */
+
+header {
+  position: relative;
+  background: black;
+  padding: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  position: relative;
+  font-size: 2rem;
+  color: rgb(248, 245, 245);
+  z-index: 2;
+}
+
+nav a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+nav .login {
+  color: white;
+  padding: 0.7em 1.2em;
+  background: linear-gradient(180deg, #4066ff, blue);
+  border-radius: 6px;
+}
+
+/* Navbar for small  */
+
+.display-for-small {
+  background-color: white;
+  position: absolute;
+  padding: 2.5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3em;
+  top: 50%;
+  right: 10%;
+  border-radius: 1em;
+  z-index: 20;
+}
+
+.display-for-large {
+  display: none;
+}
+
+.bars {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 35px;
+}
+
+.bars:hover {
+  opacity: 0.9;
+}
+
+.bars > span {
+  background-color: white;
+  height: 3px;
+  border-radius: 4px;
+}
+
+.bars:nth-child(1) {
+  width: 100%;
+}
+
+.bars span:nth-child(2) {
+  width: 70%;
+  margin-left: auto;
+}
+
+.bars span:nth-child(3) {
+  width: 50%;
+  margin-left: auto;
+}
+
+/* Navbar Ball  */
+.navbar-ball {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, #4066ff, blue);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 520px) and (max-width: 800px) {
+  nav {
+    gap: 0.9em;
+    position: static;
+    flex-direction: row;
+    background: black;
+    padding: 0.2em;
+  }
+
+  .bars {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    background-color: black;
+    padding-inline: 2em;
+  }
+
+  .display-for-small {
+    display: none;
+  }
+
+  .display-for-large {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* border-radius: 1em; */
+    background: black;
+    gap: 1em;
+    padding: 0;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  nav button:nth-of-type(4) {
+    padding: 0.6em 13em;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .display-none {
+    display: flex;
+  }
+}

@@ -1,0 +1,22 @@
+.get-started {
+    background: #4161df;
+    text-align: center;
+    padding: 2em;
+    width: 85%;
+    margin: 2.4em auto;
+    border-radius: 1em;
+    border: 8px solid #5d77d6;
+}
+
+.get-started p {
+    margin-block: 0.8em 1em;
+}
+
+.get-started > button {
+    border-radius: 9px;
+    color: white;
+    border: 3px solid white;
+    background: #5a73d7;
+    padding: 1em 1.2em;
+    letter-spacing: 1px;
+}
